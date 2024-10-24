@@ -6,7 +6,7 @@
 #define UNTITLED1_STACK_H
 
 /**
- * @brief Structure for the stack of integers
+ * @brief Structure for the stack (pile) of integers [tableau dynamique]
  */
 typedef struct s_stack
 {
@@ -16,7 +16,7 @@ typedef struct s_stack
 } t_stack;
 
 /**
- * @brief Function to create a stack
+ * @brief Function to create a stack [pile sans val : juste allocation mémoire du tableau (nbElts = 0)]
  * @param size : the size of the stack
  * @return the stack
  */

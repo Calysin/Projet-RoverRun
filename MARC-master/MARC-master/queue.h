@@ -6,22 +6,22 @@
 #define UNTITLED1_QUEUE_H
 #include "loc.h"
 /**
- * @brief Structure for the queue of integers
+ * @brief Structure for the queue (file) of integers [Tableau dynamique]
  */
 typedef struct s_queue
 {
-    t_position *values;
+    t_position *values; // tableau (malloc)
     int size;
     int last;
     int first;
 } t_queue;
 
 /**
- * @brief Function to create a queue
+ * @brief Function to create a queue [file sans val : juste allocation mémoire du tableau (1st/last = 0)]
  * @param size : the size of the queue
  * @return the queue
  */
-t_queue createQueue(int);
+t_queue createQueue(int); 
 
 /**
  * @brief Function to enqueue a value in the queue
