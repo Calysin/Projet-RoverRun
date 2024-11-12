@@ -8,8 +8,16 @@
 typedef struct s_node
 {
     int value;
-    struct s_node **sons;
-    int nbSons; // taille physique du tableau
+    struct s_node *prev;
+    struct s_node **son; //tab de pointeurs (enfants)
+    int nbSon; // taille physique du tableau
 } t_node;
+
+typedef struct s_tree {
+    t_node *root;
+} t_tree;
+
+t_node CreationDUnUnePetitPetiteNodePasPiqueDesHannetons(int value, t_node prev, t_node *son, int nbSon);
+t_tree CreationOfTheARBREnotanyarbrebutTHEarbre();
 
 #endif //UNTITLED1_ARBRE_N_AIRES_H
