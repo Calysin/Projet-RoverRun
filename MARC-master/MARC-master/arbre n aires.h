@@ -17,7 +17,7 @@ typedef struct s_tree {
     t_node *root;
 } t_tree;
 
-t_node CreationDUnUnePetitPetiteNodePasPiqueDesHannetons(int value, t_node prev, t_node *son, int nbSon);
+t_node CreationDUnUnePetitPetiteNodePasPiqueDesHannetons(t_node *prev, int val, int nbSon)
 t_tree CreationOfTheARBREnotanyarbrebutTHEarbre();
 
 #endif //UNTITLED1_ARBRE_N_AIRES_H
