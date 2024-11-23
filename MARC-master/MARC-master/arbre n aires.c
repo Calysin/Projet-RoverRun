@@ -22,3 +22,10 @@ t_node CreationDUnUnePetitPetiteNodePasPiqueDesHannetons(t_node *prev, int val, 
     }
     return *newNode;
 }
+
+t_tree CreationOfTheARBREnotanyarbrebutTHEarbre()
+{
+    t_tree tree;
+    tree.root = NULL;
+    return tree;
+}
